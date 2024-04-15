@@ -127,12 +127,14 @@ body{
     left: 0;
     background-color: grey;
     padding-top: 20px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
 .sidebar ul{
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-    list-style-type: none;
     margin: 0;
     padding: 0;
 }
@@ -142,7 +144,7 @@ body{
 }
 
 .sidebar ul li{
-    padding: 10px;
+    padding: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -153,7 +155,7 @@ body{
     list-style-type: none;
     margin: 0;
     padding-left: 10px;
-    display: flex;
+    display: block;
     align-items: center;
 }
 .sidebar ul li a i{
@@ -189,13 +191,20 @@ body{
 
   @media screen and (max-width: 768px) {
     .sidebar {
-      width: 200px;
+      width: 250px;
     }
-    
-    .content {
-      margin-left: 200px;
-    }
+   
+.content {
+    margin-left: 0;
   }
+  
+  }
+  
+@media screen and (max-width: 576px) {
+    .sidebar {
+      width: 100%;
+    }
+}
   
   .toggle-btn:hover {
     background-color: bisque;
